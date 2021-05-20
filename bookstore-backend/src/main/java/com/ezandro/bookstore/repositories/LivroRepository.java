@@ -13,6 +13,6 @@ import com.ezandro.bookstore.domain.Livro;
 public interface LivroRepository extends JpaRepository<Livro, Integer> {
 
 	@Query("SELECT obj FROM Livro obj WHERE obj.categoria.id = :id_cat ORDER BY obj.titulo")
-	List<Livro> findAllCategoria(@Param(value = "id_cat") Integer id_cat);
+	List<Livro> findAllByCategoria(@Param(value = "id_cat") Integer id_cat);
 	
 }
