@@ -19,7 +19,7 @@ public class CategoriaService {
 	
 	public Categoria findById(Integer id) {
 		Optional<Categoria> obj = categoriaRepository.findById(id);
-		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! ID: " + id + ", Tipo: + " + Categoria.class.getName()));
+		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado! ID: " + id + ", Tipo: " + Categoria.class.getName()));
 	}
 	
 	public List<Categoria> findAll() {
@@ -36,6 +36,11 @@ public class CategoriaService {
 		obj.setNome(objDTO.getNome());
 		obj.setDescricao(objDTO.getDescricao());
 		return categoriaRepository.save(obj);
+	}
+
+	public void deleteById(Integer id) {
+		findById(id);
+		categoriaRepository.deleteById(id);
 	}
 	
 }
