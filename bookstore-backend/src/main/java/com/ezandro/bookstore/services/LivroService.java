@@ -50,4 +50,9 @@ public class LivroService {
 		return livroRepository.save(obj);
 	}
 
+	public void deleteById(Integer id) {
+		Livro obj = findById(id);
+		livroRepository.deleteById(obj.getId());	
+	}
+
 }
