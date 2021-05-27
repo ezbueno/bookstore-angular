@@ -1,4 +1,3 @@
-import { Categoria } from "./../categoria/categoria.model";
 import { environment } from "./../../../../environments/environment";
 import { Livro } from "./livro.model";
 import { Observable } from "rxjs";
@@ -32,6 +31,11 @@ export class LivroService {
   create(livro: Livro, id_cat: String): Observable<Livro> {
     const url = `${this.baseUrl}/livros?categoria=${id_cat}`;
     return this.http.post<Livro>(url, livro);
+  }
+
+  delete(id: String): Observable<void> {
+    const url = `${this.baseUrl}/livros/${id}`;
+    return this.http.delete<void>(url);
   }
 
   message(msg: String): void {
