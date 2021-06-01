@@ -27,6 +27,6 @@ Obs: Utilizei a conta free do Heroku e após 30 minutos a API entra em modo slee
 * Foi utilizado o JPA com Hibernate para mapeamento objeto-relacional e implantação na nuvem usando a plataforma Heroku.
 * Validação de dados, tratamento de exceções, uso adequado do protocolo HTTP no padrão REST entre outros.
 
-#VISÃO TÉCNICA - FRONT-END:
+# VISÃO TÉCNICA - FRONT-END:
 * Além do back-end, o front-end foi desenvolvido utilizando o Angular 11. 
 * Explorado a arquitetura MVC do Angular, os componentes visuais do Angular Material, Angular reactive forms, navegação. 
