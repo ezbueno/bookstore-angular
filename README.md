@@ -1,4 +1,4 @@
-<p align="center">Esse é um sistema que foi desenvolvido usando as tecnologias Spring Boot 2.x para desenvolver uma API REST com boas práticas de Engenharia de Software onde hospedei a mesma na plataforma Heroku e posteriormente foi criado a parte do front-end com o framework Angular 11 para consumir nossa API. Esta aplicação foi hospedada no GitHub Pages e está disponível no link: https://ezbueno.github.io/myBookstore/
+<p align="center">Esse é um sistema que foi desenvolvido usando as tecnologias Spring Boot 2.x para desenvolvimento de uma API REST com boas práticas de Engenharia de Software. A hospedagem foi feito na plataforma Heroku. Posteriormente, foi criado a parte do front-end com o framework Angular 11 para consumir nossa API. Esta aplicação foi hospedada no GitHub Pages e está disponível no link: https://ezbueno.github.io/myBookstore/
 
 
 Obs: Utilizei a conta free do Heroku e após 30 minutos a API entra em modo sleeping. Na próxima requisição, a mesma pode demorar certa de 30 segundos para responder.
